@@ -18,6 +18,12 @@
     background: rgb(0, 101, 219);
     background: linear-gradient(90deg, rgb(0,101,219) 40%, rgba(0,212,255,1)100%);
 }
+/*  */
+.form{
+    background: rgb(0, 101, 219);
+    background: linear-gradient(90deg, rgb(0,101,219) 30%, rgba(0,212,255,1)100%);
+}
+
 
 .App {
   text-align: center;
