@@ -1,30 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-import Navbar from './components/Navbar';
-import Home from './components/Home';
-import About from './components/About';
-import Services from './components/Services';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Login from './components/auth/Login';
-import Register from './components/auth/Register';
+import Lobby from './components/Main';
+import Dashboard from "./components/admin/Dashboard";
 
 function App() {
-  return (
-    <>
-      <Navbar />
-      <Routes>
-        <Route path="/" caseSensitive={false} element={<Home />} />
-        <Route path="/about" caseSensitive={false} element={<About />} />
-        <Route path="/services" caseSensitive={false} element={<Services />} />
-        <Route path="/contact" caseSensitive={false} element={<Contact />} />
-        <Route path="/login" caseSensitive={false} element={<Login />} />
-        <Route path="/register" caseSensitive={false} element={<Register />} />
-      </Routes>
-      <Footer />
-    </>
-  );
+    return (
+      <>
+            <Routes>
+                <Route path="/dashboard" element={<Dashboard />} />
+                <Route path="*" element={<Lobby />} />
+            </Routes>
+      </>
+    );
 }
 
 export default App;
