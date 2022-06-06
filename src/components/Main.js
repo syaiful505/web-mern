@@ -8,8 +8,8 @@ import Services from "./Services";
 import Contact from "./Contact";
 import Login from "./auth/Login";
 import Register from "./auth/Register";
+import Logout from "./auth/Logout";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
 
 const Main = () => {
   return (
@@ -25,6 +25,7 @@ const Main = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/logout" element={<Logout />} />
       </Routes>
             <footer>
                 <Footer />

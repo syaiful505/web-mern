@@ -35,7 +35,7 @@ const Register = () => {
         window.alert("Alreay Used Details")
       } else {
       window.alert("Registered Succesfully");
-      history.pushState('/login')
+      history.push('/login')
       }
     } catch (err){
       console.debug(`Error Submited : ${err.message}`);

@@ -25,36 +25,36 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <!--     Fonts and icons     -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700"
-    />
-    <!-- Nucleo Icons -->
-    <link href="%PUBLIC_URL%/assets/css/nucleo-icons.css" rel="stylesheet" />
-    <link href="%PUBLIC_URL%/assets/css/nucleo-svg.css" rel="stylesheet" />
-    <!-- Font Awesome Icons -->
-    <script
-      src="https://kit.fontawesome.com/42d5adcbca.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Material Icons -->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
-      rel="stylesheet"
-    />
-    <!-- CSS Files -->
-    <link
-      id="pagestyle"
-      href="%PUBLIC_URL%/assets/css/material-dashboard.css?v=3.0.2"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Teko:wght@300;400;500;600&family=Ubuntu:ital,wght@1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!-- css admin -->
+    <!-- Icons. Uncomment required icon fonts -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/vendor/fonts/boxicons.css" />
 
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+
+    <!-- Page CSS -->
+
+    <!-- Helpers -->
+    <script src="%PUBLIC_URL%/assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="%PUBLIC_URL%/assets/js/config.js"></script>
+    
     <title>STYLE - Web</title>
   </head>
   <body>
     <!-- <noscript>You need to enable JavaScript to run this app.</noscript> -->
     <div id="root"></div>
+    <style data-emotion="css-global 17v57cw">@font-face{font-family:Euclid Circular A;src:url(https://static.mongodb.com/com/fonts/EuclidCircularA-Regular-WebXL.woff2) format('woff2');font-weight:normal;font-display:swap;}@font-face{font-family:Euclid Circular A;src:url(https://static.mongodb.com/com/fonts/EuclidCircularA-Medium-WebXL.woff2) format('woff2');font-weight:500;font-display:swap;}@font-face{font-family:MongoDB Value Serif;src:url(https://static.mongodb.com/com/fonts/MongoDBValueSerif-Regular.woff2) format('woff2');font-weight:normal;font-display:swap;}@font-face{font-family:MongoDB Value Serif;src:url(https://static.mongodb.com/com/fonts/MongoDBValueSerif-Medium.woff2) format('woff2');font-weight:500;font-display:swap;}@font-face{font-family:MongoDB Value Serif;src:url(https://static.mongodb.com/com/fonts/MongoDBValueSerif-Bold.woff2) format('woff2');font-weight:bold;font-display:swap;}@font-face{font-family:Source Code Pro;src:url(https://static.mongodb.com/com/fonts/SourceCodePro-Regular.ttf) format('truetype');font-weight:normal;font-display:swap;}@font-face{font-family:Source Code Pro;src:url(https://static.mongodb.com/com/fonts/SourceCodePro-Medium.ttf) format('truetype');font-weight:500;font-display:swap;}</style>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -66,22 +66,24 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
     <!--   Core JS Files   -->
-    <script src="%PUBLIC_URL%/assets/js/core/popper.min.js"></script>
-    <script src="%PUBLIC_URL%/assets/js/core/bootstrap.min.js"></script>
-    <script src="%PUBLIC_URL%/assets/js/plugins/perfect-scrollbar.min.js"></script>
-    <script src="%PUBLIC_URL%/assets/js/plugins/smooth-scrollbar.min.js"></script>
-    <script>
-      var win = navigator.platform.indexOf("Win") > -1;
-      if (win && document.querySelector("#sidenav-scrollbar")) {
-        var options = {
-          damping: "0.5",
-        };
-        Scrollbar.init(document.querySelector("#sidenav-scrollbar"), options);
-      }
-    </script>
-    <!-- Github buttons -->
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="%PUBLIC_URL%/assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="%PUBLIC_URL%/assets/vendor/libs/popper/popper.js"></script>
+    <script src="%PUBLIC_URL%/assets/vendor/js/bootstrap.js"></script>
+    <script src="%PUBLIC_URL%/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+    <script src="%PUBLIC_URL%/assets/vendor/js/menu.js"></script>
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+
+    <!-- Main JS -->
+    <script src="%PUBLIC_URL%/assets/js/main.js"></script>
+
+    <!-- Page JS -->
+
+    <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
-    <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
-    <script src="%PUBLIC_URL%/assets/js/material-dashboard.min.js?v=3.0.2"></script>
   </body>
 </html>
